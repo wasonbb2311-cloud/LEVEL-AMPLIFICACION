@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEMO cabecera — réplica visual</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css?v=48">
+<style>
+/* demo: marquee estático de eventos */
+.marquee{padding:2px 0}
+.marquee-track{animation:none}
+.ev{display:flex;align-items:center;justify-content:center;gap:0;width:100%}
+.ev-item{display:flex;flex-direction:column;align-items:center;gap:2px;padding:3px 16px;color:#0A0A0A}
+.ev-item svg{width:24px;height:24px;fill:none;stroke:#0A0A0A;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ev-item span{font-weight:800;font-size:10px;letter-spacing:.08em}
+.ev-dot{color:#000;font-weight:800;font-size:14px}
+/* demo: fondo negro, footer pegado a la izquierda, titulares sin animación */
+body{background:#000}
+.footer-real{justify-content:flex-start;flex-wrap:nowrap;padding-left:0;padding-right:0;margin-left:-14px;margin-right:-14px}
+.footer-social{margin-left:auto}
+.footer-real strong{font-size:18px}
+.footer-real span{font-size:12px}
+@media(max-width:600px){
+  .footer-real{flex-wrap:nowrap;padding-left:0;margin-left:-8px;gap:8px}
+  .footer-social{gap:8px}
+  .footer-social .social-link{width:40px;height:40px;font-size:15px}
+}
+.hero-mini h1,.section.dark .h2{animation:none}
+</style>
+</head>
+<body>
+<div class="marquee"><div class="ev">
+  <div class="ev-item"><svg viewBox="0 0 24 24"><path d="M12 8V6M12 6c1-1 1-2.2 0-3-1 .8-1 2 0 3M4 21v-1.5A1.5 1.5 0 0 1 5.5 18h13A1.5 1.5 0 0 1 20 19.5V21H4zM5 18v-3.5C5 13 6 12 7 12c1.5 0 1.5 1.2 3 1.2s1.5-1.2 3-1.2 1.5 1.2 3 1.2 1.5-1.2 3-1.2v5.5"/></svg><span>CUMPLEAÑOS</span></div>
+  <span class="ev-dot">•</span>
+  <div class="ev-item"><svg viewBox="0 0 24 24"><circle cx="8.5" cy="15" r="4.5"/><circle cx="15.5" cy="15" r="4.5"/><path d="M10.5 10.2L9.2 6.8l1.7-1 1.7 1zM9.2 6.8L10.9 5l1.7 1.8M4.5 6.5c.4-1 1.4-1.5 2-1 .5.4.3 1.2-.3 1.9-.5.6-1.4 1.3-1.7 1.6-.3-.3-1.2-1-1.7-1.6-.6-.7-.8-1.5-.3-1.9.6-.5 1.6 0 2 1zM19.5 5.5c.4-1 1.4-1.5 2-1 .5.4.3 1.2-.3 1.9-.5.6-1.4 1.3-1.7 1.6-.3-.3-1.2-1-1.7-1.6-.6-.7-.8-1.5-.3-1.9.6-.5 1.6 0 2 1z"/></svg><span>BODAS</span></div>
+  <span class="ev-dot">•</span>
+  <div class="ev-item"><svg viewBox="0 0 24 24"><path d="M5 21L14 4.5l3.5 2L8.5 21zM8 17.5c1.5.5 3 .3 4.5-.5M10 14.5c1.5.5 3 .3 4.5-.5M12 11.5c1.2.4 2.5.2 3.7-.4M15.5 6.5c-.3-1.2.3-2.3 1.5-2.5M18.5 8.5c1.2-.3 2.3.3 2.5 1.5M20 4.5a1.3 1.3 0 1 0 .1 0M17 3.5a1.1 1.1 0 1 0 .1 0M21 11c.8.3 1 1.3.5 2"/></svg><span>15 AÑOS</span></div>
+  <span class="ev-dot">•</span>
+  <div class="ev-item"><svg viewBox="0 0 24 24"><path d="M12 3.5L2.5 8.5 12 13.5l9.5-5zM7 11v3.5L12 17.5l5-3V11M17.5 17.5V20"/></svg><span>PROMOS</span></div>
+  <span class="ev-dot">•</span>
+  <div class="ev-item"><svg viewBox="0 0 24 24"><path d="M3.5 5h17L12 12.5zM12 12.5V21M8.5 21h7M17.5 5l2.5-2.5M20 2.5h-2.5V5"/></svg><span>PREVIAS</span></div>
+</div></div>
+<header class="header">
+  <div class="header-inner">
+    <div class="brand" style="position:relative;width:100%;padding:22px 0 44px;overflow:visible;display:flex;justify-content:center">
+      <div style="position:relative;z-index:2;display:flex;align-items:center;gap:10px;flex-wrap:nowrap;white-space:nowrap;justify-content:center;width:100%">
+        <span style="font-family:'Anton',sans-serif;font-size:48px;letter-spacing:-.03em;line-height:1;color:#EDEDE8">LEVEL</span>
+        <span style="font-family:'Anton',sans-serif;font-size:48px;line-height:1;color:var(--lime)">—</span>
+        <span style="font-family:'Anton',sans-serif;font-size:48px;letter-spacing:-.03em;line-height:1;color:var(--lime);text-shadow:0 0 14px rgba(var(--lime-rgb),.5)">AMPLIFICACIÓN</span>
+      </div>
+      <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:'Anton',sans-serif;font-size:150px;line-height:1;letter-spacing:.08em;color:transparent;-webkit-text-stroke:1.6px rgba(255,255,255,.09);pointer-events:none;user-select:none;z-index:1;white-space:nowrap">LEVEL</div>
+    </div>
+  </div>
+</header>
+<div class="truss"></div>
+<div class="hero-mini" style="background:linear-gradient(180deg, #fff 0%, #EDEDE8 100%);position:relative;overflow:hidden">
+  <div style="position:absolute;right:-40px;top:-2px;width:360px;height:220px;opacity:.18;pointer-events:none;background:url('assets/img/hero/hero-bg.jpg') center/cover;filter:grayscale(1) contrast(1.2);transform:rotate(-3deg);border:3px solid var(--black)"></div>
+  <div style="position:relative">
+    <div class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--black);background:var(--lime);display:inline-block;padding:4px 8px;border:1.5px solid var(--black);box-shadow:0 0 10px rgba(var(--lime-rgb),.4)"> SONIDO E ILUMINACIÓN PROFESIONAL</div>
+    <h1 style="margin-top:10px">QUE RETUMBE <span class="neon">TODA LA NOCHE</span></h1>
+    <p></p>
+  </div>
+  <div class="hero-mini-right" style="position:relative">
+    <span class="pill"><i class="pill-dot"></i> DISPONIBLE ESTE FIN</span>
+    <span class="mono" style="font-size:10px;letter-spacing:.06em;border:1.5px solid var(--black);padding:5px 8px;background:#fff">TU MEJOR OPCION - CON SONIDO PREMIUM</span>
+    <div class="mono" style="width:100%;margin-top:4px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--lime);text-shadow:0 0 8px rgba(var(--lime-rgb),.6);background:#0A0A0A;border:1.5px solid var(--black);padding:6px 8px;text-align:center;box-shadow:0 0 12px rgba(var(--lime-rgb),.3)">● APARTA TU FECHA CON SOLO 100BS</div>
+  </div>
+</div>
+<section id="paquetes" class="paquetes-hero">
+<footer class="footer-real">
+  <div><strong>LEVEL</strong> <span>🇲🇨 Tarija 🇲🇨</span><br><strong>AMPLIFICACION</strong></div>
+  <div class="footer-social">
+    <a href="#" class="social-link fb" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#" class="social-link wa" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#" class="social-link ig" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" class="social-link tt" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+  </div>
+</footer>
+<section class="section dark" style="padding:6px 20px 8px;text-align:center;border-bottom:3px solid var(--black)">
+  <h2 class="h2" style="font-size:clamp(36px,6vw,64px)">TU FIESTA SE <span class="neon">PRENDE</span></h2>
+</section>
+</section>
+<script src="js/main.js?v=19"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+📸 CARPETA DE FOTOS — LEVEL AMPLIFICACIÓN
+==========================================
+Cada tarjeta tiene SU PROPIA CARPETA. No mezcles fotos.
+
+ESTRUCTURA:
+assets/img/
+├── hero/ → hero-bg.jpg (fondo decorativo arriba)
+├── house-party/ → portada.jpg (TU FOTO REAL) + slide-2.jpg + slide-3.jpg
+├── after-clandestino/ → slide-1.jpg + slide-2.jpg + slide-3.jpg
+├── mini-festival/ → slide-1.jpg + slide-2.jpg + slide-3.jpg
+├── equipo-melo/ → foto-1.jpg + foto-2.jpg + foto-3.jpg
+├── equipo-sub/ → foto-1.jpg + foto-2.jpg + foto-3.jpg
+├── equipo-beam/ → foto-1.jpg + foto-2.jpg + foto-3.jpg
+└── equipo-humo/ → foto-1.jpg + foto-2.jpg + foto-3.jpg
+
+CÓMO REEMPLAZAR:
+1. Entra a la carpeta de la tarjeta (ej: house-party/)
+2. Reemplaza el archivo manteniendo el MISMO NOMBRE
+   Ej: tu foto de house → renómbrala a portada.jpg y reemplaza
+3. Recarga index.html
+
+REGLAS:
+- .jpg, 800px aprox, <300KB
+- Sin espacios ni tildes en nombres
+- No borres la carpeta, solo reemplaza el archivo

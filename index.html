@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#000000">
+<title>LEVEL — AMPLIFICACION</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css?v=49">
+</head>
+<body>
+<div class="marquee"><span class="marquee-track">◆ ELIGE TU NIVEL — HOUSE PARTY • AFTER CLANDESTINO • FESTIVAL PRIVADO — SONIDO QUE RETUMBA • BEAMS QUE CORTAN EL HUMO • COTIZA EN 30 SEG ◆ ELIGE TU NIVEL — HOUSE PARTY • AFTER CLANDESTINO • FESTIVAL PRIVADO — SONIDO QUE RETUMBA • BEAMS QUE CORTAN EL HUMO • COTIZA EN 30 SEG ◆&nbsp;</span><span class="marquee-track">◆ ELIGE TU NIVEL — HOUSE PARTY • AFTER CLANDESTINO • FESTIVAL PRIVADO — SONIDO QUE RETUMBA • BEAMS QUE CORTAN EL HUMO • COTIZA EN 30 SEG ◆ ELIGE TU NIVEL — HOUSE PARTY • AFTER CLANDESTINO • FESTIVAL PRIVADO — SONIDO QUE RETUMBA • BEAMS QUE CORTAN EL HUMO • COTIZA EN 30 SEG ◆&nbsp;</span></div>
+<header class="header">
+  <div class="header-inner">
+    <div class="brand" style="position:relative;width:100%;padding:22px 0 14px;overflow:visible;display:flex;justify-content:center">
+      <div style="position:relative;z-index:2;display:flex;align-items:center;gap:10px;flex-wrap:nowrap;white-space:nowrap;justify-content:center;width:100%">
+        <span style="font-family:'Anton',sans-serif;font-size:48px;letter-spacing:-.03em;line-height:1;color:#EDEDE8">LEVEL</span>
+        <span style="font-family:'Anton',sans-serif;font-size:48px;line-height:1;color:var(--lime)">—</span>
+        <span style="font-family:'Anton',sans-serif;font-size:48px;letter-spacing:-.03em;line-height:1;color:var(--lime);text-shadow:0 0 14px rgba(var(--lime-rgb),.5)">AMPLIFICACIÓN</span>
+      </div>
+      <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-42%);font-family:'Anton',sans-serif;font-size:120px;line-height:1;letter-spacing:.08em;color:transparent;-webkit-text-stroke:1.6px rgba(255,255,255,.09);pointer-events:none;user-select:none;z-index:1;white-space:nowrap">LEVEL</div>
+    </div>
+    <div class="header-actions">
+      <nav class="nav-pill mono">
+        <a class="active" href="#paquetes">Paquetes</a>
+        <a href="#equipo">Equipo</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="truss"></div>
+<div class="hero-mini" style="background:linear-gradient(180deg, #fff 0%, #EDEDE8 100%);position:relative;overflow:hidden">
+  <div style="position:absolute;right:-40px;top:-2px;width:360px;height:220px;opacity:.18;pointer-events:none;background:url('assets/img/hero/hero-bg.jpg') center/cover;filter:grayscale(1) contrast(1.2);transform:rotate(-3deg);border:3px solid var(--black)"></div>
+  <div style="position:relative">
+    <div class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--black);background:var(--lime);display:inline-block;padding:4px 8px;border:1.5px solid var(--black);box-shadow:0 0 10px rgba(var(--lime-rgb),.4)"> SONIDO E ILUMINACIÓN PROFESIONAL</div>
+    <h1 style="margin-top:10px">QUE RETUMBE <span class="neon">TODA LA NOCHE</span></h1>
+    <p>
+
+    </p>
+  </div>
+  <div class="hero-mini-right" style="position:relative">
+    <span class="pill"><i class="pill-dot"></i> DISPONIBLE ESTE FIN</span>
+    <span class="mono" style="font-size:10px;letter-spacing:.06em;border:1.5px solid var(--black);padding:5px 8px;background:#fff">TU MEJOR OPCION - CON SONIDO PREMIUM</span>
+    <div class="mono" style="width:100%;margin-top:4px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--lime);text-shadow:0 0 8px rgba(var(--lime-rgb),.6);background:#0A0A0A;border:1.5px solid var(--black);padding:6px 8px;text-align:center;box-shadow:0 0 12px rgba(var(--lime-rgb),.3)">● APARTA TU FECHA CON SOLO 100BS</div>
+  </div>
+</div>
+<section id="paquetes" class="paquetes-hero">
+  <div class="cd-strip">
+    <span class="cd-label">⚡ Aparta hoy — quedan:</span>
+    <span class="cd-box"><b id="cd-d">00</b><i>DÍAS</i></span>
+    <span class="cd-box"><b id="cd-h">00</b><i>HRS</i></span>
+    <span class="cd-box"><b id="cd-m">00</b><i>MIN</i></span>
+    <span class="cd-box"><b id="cd-s">00</b><i>SEG</i></span>
+    <span class="cd-note">para fin de mes</span>
+  </div>
+  <div class="pa-grid">
+    <div class="p-ticket reveal">
+      <div class="p-top">Ticket   <b>CASA / DEPTO</b></div>
+      <div class="p-name">HOUSE<br><em>PARTY</em></div>
+      <div class="price"><b>Bs700 </b> <small>Precio </small> <i>Base</i></div>
+      <div class="p-img">
+        <div class="pk-view" id="pk-house">
+          <figure class="pk-slide is-on"><img src="assets/img/house-party/portada.jpg" alt="House Party - fiesta real"></figure>
+          <figure class="pk-slide" data-full="assets/img/house-party/slide-2-grande.jpg"><img src="assets/img/house-party/slide-2.jpg" alt="House 2" style="object-position:center 10%"></figure>
+          <figure class="pk-slide"><img src="assets/img/house-party/slide-3.jpg" alt="House 3"></figure>
+          <figure class="pk-slide"><img src="assets/img/house-party/slide-4.jpg" alt="House 4"></figure>
+          <button class="pk-next" onclick="pkNext('pk-house')" aria-label="Siguiente foto"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        </div>
+        <span class="p-img-tag">Buena musica</span>
+      </div>
+      <ul class="list"><li>2x Parlantes JBL  + 2x Bajos</li><li>4x Par Luces LED  + Maquinade humo </li><li>Micro inalámbrico + consola 8ch</li><li>DJ  + Cabina </li></ul>
+      <a class="p-cta" href="https://wa.me/5210000000000?text=Quiero%20HOUSE%20PARTY%20%2454500" target="_blank">Cotizar House Party →</a>
+    </div>
+    <div class="p-ticket featured reveal">
+      <span class="featured-glow"></span>
+      <div class="p-top">★MÁS PEDIDO★  <b>JARDÍN / SALÓN</b></div>
+      <div class="p-name">AFTER<br><em>CLANDESTINO</em></div>
+      <div class="price"><b>Bs1300</b> <small>  lo mas </small> <i>★ TOP ★ </i></div>
+      <div class="p-img">
+        <div class="pk-view" id="pk-after">
+          <figure class="pk-slide is-on"><img src="assets/img/after-clandestino/slide-1.jpg" alt="After 1"></figure>
+          <figure class="pk-slide"><img src="assets/img/after-clandestino/slide-2.jpg" alt="After 2"></figure>
+          <figure class="pk-slide" data-full="assets/img/after-clandestino/slide-3-grande.jpg"><img src="assets/img/after-clandestino/slide-3.jpg" alt="After 3"></figure>
+          <figure class="pk-slide"><img src="assets/img/after-clandestino/slide-4.jpg" alt="After 4"></figure>
+          <button class="pk-next" onclick="pkNext('pk-after')" aria-label="Siguiente foto"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        </div>
+        <span class="p-img-tag">SHOW DE LUCES ⚡</span>
+      </div>
+      <ul class="list"><li>2x JBL dobles + 2x Sub Bajos dobles </li><li>4x Cabeza moviles  </li><li>2x Luz BEAM + 2x Tachos LED  </li></ul>
+      <ul class="list"><li>Maquina de humo denso  </li><li>Consola + Microfono inalambricos</li><li>DJ (disco) + Cabina</li></ul>
+      <a class="p-cta" href="https://wa.me/5210000000000?text=Quiero%20AFTER%20CLANDESTINO%20%248900" target="_blank">Cotizar evento  →</a>
+    </div>
+    <div class="p-ticket reveal">
+      <div class="p-top">Ticket <b>SALÓN / CASA / TERRAZA</b></div>
+      <div class="p-name">MINI FESTIVAL<br><em>PRIVADO</em></div>
+      <div class="price"><b>Bs2000</b> <small>evento </small> <i>Pro</i></div>
+      <div class="p-img">
+        <div class="pk-view" id="pk-festival">
+          <figure class="pk-slide is-on"><img src="assets/img/mini-festival/slide-1.jpg" alt="Festival 1"></figure>
+          <figure class="pk-slide"><img src="assets/img/mini-festival/slide-2.jpg" alt="Festival 2"></figure>
+          <figure class="pk-slide"><img src="assets/img/mini-festival/slide-3.jpg" alt="Festival 3"></figure>
+          <button class="pk-next" onclick="pkNext('pk-festival')" aria-label="Siguiente foto"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        </div>
+        <span class="p-img-tag">Line Array</span>
+      </div>
+      <ul class="list"><li>Line Array 4x Aereos + 2x Bajos dobles</li><li>2x JBL Dobles</li><li>8x Juego de lueces + Estructura </li><li>Maquina de humo DENSO  </li><li>2x Maquinas de FUEGO </li><li>Consola digital + ingeniero (garantizando buen sonido + Show Luces )</li><li>DJ Profecional + Cabina</li><li>Animador </li></ul>
+      <a class="p-cta" href="https://wa.me/5210000000000?text=Quiero%20FESTIVAL%20PRIVADO%20%2416500" target="_blank">Cotizar  →</a>
+    </div>
+  </div>
+  <div class="mono" style="text-align:center;margin-top:14px;color:rgba(237,237,232,.6);font-size:11px;letter-spacing:.06em">◆ Todo con prueba de sonido antes de tu fiesta ◆<br>📍Traslado incluido zona TARIJA-Cercado📍</div>
+</section>
+<section id="equipo" class="section">
+  <div class="sec-head"><h2 class="h2">EQUIPO  <span class="neon" style="color:var(--black);background:var(--lime);padding:0 6px;box-shadow:0 0 14px rgba(var(--lime-rgb),.5)">REAL</span></h2><span style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:2px solid var(--black);padding:6px 10px;background:var(--lime);box-shadow:0 0 12px rgba(var(--lime-rgb),.35)">En bodega
+     TODO NUEVO SIN FALLAS</span></div>
+  <div class="eq-grid">
+    <article class="eq-card">
+      <div class="eq-view" id="eq-melo">
+        <figure class="eq-slide is-on" data-title="JBL PRX825" data-desc="Calidad TOP<br>Sonido de alta fidelidad" data-tag="MONITOREO"><img src="assets/img/equipo-melo/foto-3.jpg" alt="JBL PRX825"></figure>
+        <figure class="eq-slide" data-title='JBL eon615"' data-desc="Sonido equilibrado<br>Tiro largo." data-tag="SONIDO"><img src="assets/img/equipo-melo/foto-2.jpg" alt="JBL eon615"></figure>
+        <figure class="eq-slide eq-zoom" id="foto-jbl" data-title="JBL eon715" data-desc="Sonido envolvente<br>Nitido" data-tag="SONIDO" data-full="assets/img/equipo-melo/foto-1-grande.jpg"><img src="assets/img/equipo-melo/foto-1.jpg" alt="JBL eon715"></figure>
+        <button class="eq-prev" onclick="eqPrev('eq-melo')" aria-label="Foto anterior"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+      </div>
+      <div class="eq-body"><h3>JBL PRX825</h3><p>Calidad TOP<br>Sonido de alta fidelidad</p><span class="eq-tag">MONITOREO</span></div>
+    </article>
+    <article class="eq-card">
+      <div class="eq-view" id="eq-sub">
+        <figure class="eq-slide is-on" data-title='SUB 18" • Doble' data-desc="Golpean el pecho<br>Obligan a bailar" data-tag="BAJOS PRO"><img src="assets/img/equipo-sub/foto-2.jpg" alt="Sub 2"></figure>
+        <figure class="eq-slide" data-title='SUB 18"' data-desc='Nuestro subwoofer de 18" Ambiente entero vibrando' data-tag="BAJOS" data-full="assets/img/equipo-sub/foto-1-grande.jpg"><img src="assets/img/equipo-sub/foto-1.jpg" alt="Sub 1" style="object-position:center 42%"></figure>
+        <figure class="eq-slide" data-title='SUB 18" • Doble' data-desc="Golpean el pecho<br>Obligan a bailar" data-tag="BAJOS PRO"><img src="assets/img/equipo-sub/foto-3.jpg" alt="Sub 3"></figure>
+        <button class="eq-prev" onclick="eqPrev('eq-sub')" aria-label="Foto anterior"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+      </div>
+      <div class="eq-body"><h3>SUB 18" • Doble</h3><p>Golpean el pecho<br>Obligan a bailar</p><span class="eq-tag">BAJOS PRO</span></div>
+    </article>
+    <article class="eq-card">
+      <div class="eq-view" id="eq-beam">
+        <figure class="eq-slide is-on" data-title="LUZ BEAM" data-desc="Intenso y uniforme<br>Ilumina con precisión" data-tag="LUCES • GLOW" data-full="assets/img/equipo-beam/foto-1-grande.jpg" data-lb="0"><img src="assets/img/equipo-beam/foto-1.jpg" alt="Luz Beam"></figure>
+        <figure class="eq-slide" data-title="CABEZA MOVIL" data-desc="Extelente Ilumunacion<br>Buen ambiente" data-tag="LUCES • GLOW" data-lb="2"><img src="assets/img/equipo-beam/foto-2.jpg" alt="Cabeza movil"></figure>
+        <figure class="eq-slide" data-title="TACHO LED" data-desc="Crea el ambiente<br>Perfecto de noche" data-tag="COMBO" data-lb="1"><img src="assets/img/equipo-beam/foto-3.jpg" alt="Tacho LED"></figure>
+        <button class="eq-prev" onclick="eqPrev('eq-beam')" aria-label="Foto anterior"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+      </div>
+      <div class="eq-body"><h3>LUZ BEAM</h3><p>Intenso y uniforme<br>Ilumina con precisión</p><span class="eq-tag">LUCES • GLOW</span></div>
+    </article>
+    <article class="eq-card">
+      <div class="eq-view" id="eq-humo">
+        <figure class="eq-slide is-on" data-title="CHISPAS FRIAS" data-desc="Entrada impactante<br>(Precio adicional)" data-tag="EFECTO"><img src="assets/img/equipo-humo/foto-2.jpg" alt="Chispas frias"></figure>
+        <figure class="eq-slide" data-title="HUMO DENSO 1500W" data-desc="Sin humo no hay FIESTA<br>Líquido incluido." data-tag="EFECTO"><img src="assets/img/equipo-humo/foto-1.jpg" alt="Humo 1"></figure>
+        <figure class="eq-slide" data-title="FUEGOS" data-desc="Prende tu noche<br>(precio adicional)" data-tag="EFECTO PRO"><img src="assets/img/equipo-humo/foto-3.jpg" alt="Fuegos"></figure>
+        <button class="eq-prev" onclick="eqPrev('eq-humo')" aria-label="Foto anterior"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+      </div>
+      <div class="eq-body"><h3>CHISPAS FRIAS</h3><p>Entrada impactante<br>(Precio adicional)</p><span class="eq-tag">EFECTO</span></div>
+    </article>
+  </div>
+</section>
+<footer class="footer-real">
+  <div class="footer-brand"><div class="footer-line1"><strong>LEVEL</strong><span>🇲🇨 Tarija 🇲🇨</span></div><div class="footer-line2"><strong>AMPLIFICACION</strong></div></div>
+  <div class="footer-social">
+    <a href="https://www.facebook.com/share/14prLyJyzGi/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-link fb" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://wa.me/59175145558" target="_blank" rel="noopener" class="social-link wa" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/sky2_tarija?igsi=aTkwbXA2Z2l1bzNz" target="_blank" rel="noopener" class="social-link ig" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@sky2_tarija" target="_blank" rel="noopener" class="social-link tt" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+  </div>
+</footer>
+<section class="section dark" style="padding:6px 30px 8px;text-align:center;border-bottom:3px solid var(--black)">
+  <h2 class="h2" style="font-size:clamp(36px,6vw,64px)">TU FIESTA SE <span class="neon">PRENDE</span></h2>
+</section>
+<!-- Lightbox -->
+<div class="lb" id="lb-jbl" aria-hidden="true">
+  <div class="lb-frame full" id="lb-frame">
+    <img id="lb-img" src="assets/img/equipo-melo/foto-1.jpg" alt="Foto en grande">
+    <button class="lb-x" id="lb-x" aria-label="Cerrar">✕</button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Foto anterior">‹</button>
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Foto siguiente">›</button>
+  </div>
+  <p class="lb-cap" id="lb-cap" hidden></p>
+</div>
+<script src="js/main.js?v=19"></script>
+</body>
+</html>
