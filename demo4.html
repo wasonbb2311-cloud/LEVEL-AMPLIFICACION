@@ -20,6 +20,17 @@
 body{background:#000}
 .footer-real{justify-content:flex-start;flex-wrap:nowrap;padding-left:0;padding-right:0;margin-left:-14px;margin-right:-14px}
 .footer-social{margin-left:auto}
+/* demo: fila QR */
+.qr-row{display:flex;gap:24px;justify-content:center;background:#0A0A0A;padding:18px 20px;align-items:flex-start}
+.qr-item{display:flex;flex-direction:column;align-items:center;gap:0}
+.qr-item:last-child{margin-top:-16px}
+.qr-item img{width:180px;height:180px;background:none;padding:0}
+.qr-item.qr-web img{width:150px;height:150px}
+.qr-item.qr-web strong{margin-top:1px}
+.qr-item strong{color:#fff;font-size:13px;letter-spacing:.08em}
+.qr-caption{color:#fff;font-size:11px;margin-top:2px;white-space:nowrap;text-align:center}
+.qr-overlay{position:absolute;bottom:-8px;left:50%;transform:translateX(-50%);color:#fff;font-size:14px;font-weight:700;white-space:nowrap;padding:2px 6px;border-radius:3px}
+.qr-item{position:relative}
 .footer-real strong{font-size:18px}
 .footer-real span{font-size:12px}
 @media(max-width:600px){
@@ -81,6 +92,10 @@ body{background:#000}
 <section class="section dark" style="padding:6px 20px 8px;text-align:center;border-bottom:3px solid var(--black)">
   <h2 class="h2" style="font-size:clamp(36px,6vw,64px)">TU FIESTA SE <span class="neon">PRENDE</span></h2>
 </section>
+<div class="qr-row">
+  <div class="qr-item qr-web"><img src="assets/img/qr-web.png" alt="QR página web"><strong>PAGINA WEB</strong></div>
+  <div class="qr-item"><img src="assets/img/wpp-full.png" alt="QR WhatsApp"><div class="qr-overlay">WhatsApp: 75145558</div></div>
+</div>
 </section>
 <script src="js/main.js?v=19"></script>
 </body>
