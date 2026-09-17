@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eventos Compacto</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#0A0A0A;color:#EDEDE8;font-family:'Space Grotesk',sans-serif;padding:40px 20px}
+  .strip{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;padding:14px 20px;background:linear-gradient(135deg,rgba(136,0,255,.06),rgba(136,0,255,.12));border:1px solid rgba(136,0,255,.15);border-radius:60px;max-width:900px;margin:0 auto}
+  .item{display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:30px;transition:all .3s;cursor:pointer}
+  .item:hover{background:rgba(136,0,255,.2);transform:scale(1.05)}
+  .item svg{width:20px;height:20px;fill:none;stroke:#8800FF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .item span{font-size:12px;font-weight:600;letter-spacing:.04em;color:#EDEDE8;white-space:nowrap}
+  .label{text-align:center;margin-bottom:20px;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(136,0,255,.6)}
+</style>
+</head>
+<body>
+<div class="label">EVENTOS QUE CUBRIMOS</div>
+<div class="strip">
+  <div class="item"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg><span>CUMPLEAÑOS</span></div>
+  <div class="item"><svg viewBox="0 0 24 24"><circle cx="8.5" cy="15" r="4.5"/><circle cx="15.5" cy="15" r="4.5"/></svg><span>BODAS</span></div>
+  <div class="item"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/></svg><span>15 AÑOS</span></div>
+  <div class="item"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10"/></svg><span>PROMOS</span></div>
+  <div class="item"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><span>PREVIAS</span></div>
+</div>
+</body>
+</html>

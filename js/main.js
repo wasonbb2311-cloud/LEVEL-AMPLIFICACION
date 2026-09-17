@@ -37,6 +37,15 @@ function eqPrev(id) {
   eqIdx[id] = (eqIdx[id] - 1 + n) % n;
   eqPaint(id);
 }
+function eqNext(id) {
+  const view = document.getElementById(id);
+  if (!view) return;
+  const n = view.querySelectorAll('.eq-slide').length;
+  if (!n) return;
+  if (eqIdx[id] == null) eqIdx[id] = 0;
+  eqIdx[id] = (eqIdx[id] + 1) % n;
+  eqPaint(id);
+}
 
 /* ===== PAQUETES (solo fotos) ===== */
 const pkIdx = {};
@@ -66,6 +75,18 @@ function pkNext(id) {
 document.addEventListener('DOMContentLoaded', () => {
   ['eq-melo', 'eq-sub', 'eq-beam', 'eq-humo'].forEach(eqPaint);
   ['pk-house', 'pk-after', 'pk-festival'].forEach(pkPaint);
+
+  /* Carrusel automático solo cuando es visible */
+  ['pk-house', 'pk-after', 'pk-festival'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    pkIdx[id] = 0;
+    let interval = null;
+    const start = () => { pkIdx[id] = 0; pkPaint(id); interval = setInterval(() => pkNext(id), 2000); };
+    const stop = () => { if (interval) { clearInterval(interval); interval = null; } };
+    const obs = new IntersectionObserver(([entry]) => { if (entry.isIntersecting) start(); else stop(); }, {threshold: 0.1});
+    obs.observe(el);
+  });
 
   /* Contador a fin de mes */
   const fin = new Date(); fin.setMonth(fin.getMonth() + 1, 0); fin.setHours(23, 59, 59, 0);
