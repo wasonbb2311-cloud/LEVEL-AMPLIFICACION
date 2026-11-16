@@ -73,6 +73,17 @@ function pkNext(id) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.eventos-item[data-mobile-target]').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      if (!window.matchMedia('(max-width: 1000px)').matches) return;
+      const target = document.querySelector(link.dataset.mobileTarget);
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', link.dataset.mobileTarget);
+    });
+  });
+
   ['eq-melo', 'eq-sub', 'eq-beam', 'eq-humo'].forEach(eqPaint);
   ['pk-house', 'pk-after', 'pk-festival'].forEach(pkPaint);
 
