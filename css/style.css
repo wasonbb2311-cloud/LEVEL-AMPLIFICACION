@@ -196,5 +196,6 @@ a{color:inherit;text-decoration:none}
 .eventos-label{text-align:center;margin-bottom:12px;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(136,0,255,.6)}
 .eventos-item{display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:30px;transition:all .3s;cursor:pointer}
 .eventos-item:hover{background:rgba(136,0,255,.2);transform:scale(1.05)}
+.eventos-item:first-child{background:rgba(136,0,255,.2);transform:translateY(1px) scale(.97);box-shadow:inset 0 2px 4px rgba(0,0,0,.28)}
 .eventos-item svg{width:20px;height:20px;fill:none;stroke:#8800FF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .eventos-item span{font-size:12px;font-weight:600;letter-spacing:.04em;color:#EDEDE8;white-space:nowrap;font-family:'Space Grotesk',sans-serif}
